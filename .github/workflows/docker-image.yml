@@ -13,6 +13,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build the Docker image
       - run: docker-compose build
+      - name: "Install php dependencies"
       - run: docker-compose run --user=1000 php composer install
+      - name: "Run tests"
       - run: docker-compose run --user=1000 php ./vendor/bin/phpunit
 
