@@ -1,0 +1,17 @@
+{
+    "name": "stefano/pokus",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Stefano\\Pokus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Stefano\\PokusTest\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
